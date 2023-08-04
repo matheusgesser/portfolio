@@ -62,10 +62,6 @@ main#home {
       right: 8vw;
     }
   }
-  [data-speedx] {
-    transform: translate(0, 0);
-    transition: transform 150ms linear;
-  }
   &.light {
     background: #fff;
     color: #000;

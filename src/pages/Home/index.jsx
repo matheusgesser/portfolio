@@ -17,8 +17,8 @@ export function Home({ theme, t }) {
 
   return (
     <main id='home' className={theme} onMouseMove={IconMove}>
-      <h1 data-speedx={8} data-speedy={5}>Matheus Gesser</h1>
-      <h2 data-speedx={20} data-speedy={-10}>{t('position')}</h2>
+      <h1 data-speedx={12} data-speedy={-6}>Matheus Gesser</h1>
+      <h2 data-speedx={16} data-speedy={-8}>{t('position')}</h2>
         <img src={JSLogo} id='js' data-speedx={-30} data-speedy={-50} alt="JavaScript Logo" />
         <img src={ReactLogo} id='react' data-speedx={60} data-speedy={-40} alt="React Logo" />
         <img src={SassLogo} id='sass' data-speedx={-50} data-speedy={60} alt="Sass Logo" />
