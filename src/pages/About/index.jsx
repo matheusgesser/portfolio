@@ -21,7 +21,9 @@ export function About({ theme, t }) {
           <h2>HTML</h2>
           <h2 className='major'>CSS</h2>
           <h2>Sass</h2>
-          <h2>StyledComponents</h2>
+          <h2>NodeJS</h2>
+          <h2>SQL</h2>
+          <h2>Git</h2>
         </section>
         <button>
           <RxDownload />{t('resume')}
