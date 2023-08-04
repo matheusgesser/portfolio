@@ -10,7 +10,6 @@ export function useAnimations() {
           trigger: '#about',
           start: 'top center',
           end: 'bottom top',
-          toggleActions: 'play reset play reset',
         },
       })
       aboutAnim.from('.profile', {

@@ -10,7 +10,6 @@ export function useAnimations() {
           trigger: '#home',
           start: 'top center',
           end: 'bottom top',
-          toggleActions: 'play reset play reset',
         },
       })
       homeAnim.from('#react', {
