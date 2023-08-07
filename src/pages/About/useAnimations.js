@@ -13,17 +13,22 @@ export function useAnimations() {
         },
       })
       aboutAnim.from('.profile', {
+        x: -200,
+        opacity: 0,
+        duration: 0.4
+      })
+      aboutAnim.from('section.content p', {
         y: -200,
         opacity: 0,
         duration: 0.4
       })
-      aboutAnim.from('.skills', {
-        y: -200,
+      aboutAnim.from('section.content a', {
+        x: 200,
         opacity: 0,
-        duration: 0.5
+        duration: 0.4
       })
-      aboutAnim.from('section.content button', {
-        y: -200,
+      aboutAnim.from('.skills', {
+        y: 200,
         opacity: 0,
         duration: 0.6
       })

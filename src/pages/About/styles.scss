@@ -1,29 +1,51 @@
 main#about {
-  section.profile,
-  section.content {
+  section.profile {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2rem;
     gap: 4rem;
-  }
-  section.profile {
-    flex-direction: row;
     img {
       width: 15rem;
       border-radius: 50%;
       filter: contrast(1.05);
       transform: rotate(2deg);
     }
-    p {
-      width: 60%;
-      font-size: 1.4rem;
-      text-align: center;
-      span {
-        font-size: 1.2rem;
-      }
-      @media (max-width: 600px) {
+    section.content {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      p {
         width: 100%;
+        font-size: 1.4rem;
+        text-align: center;
+        span {
+          font-size: 1.2rem;
+        }
+        @media (max-width: 600px) {
+          width: 100%;
+        }
+      }
+      a {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1rem 2rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        cursor: pointer;
+        background: #fff;
+        color: #111;
+        border: none;
+        svg {
+          display: inline;
+          font-size: 1.1rem;
+        }
+        @media (max-width: 600px) {
+          padding: 0.5rem 1rem;
+          font-size: 0.7rem;
+        }
       }
     }
     @media (max-width: 1000px) {
@@ -33,50 +55,23 @@ main#about {
       padding: 0rem;
     }
   }
-  section.content {
-    width: 80%;
-    flex-direction: column;
-    h3 {
-      font-family: "Gruppo";
-      font-size: 2.5rem;
-    }
-    section.skills {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 2rem;
-      padding: 2rem;
-      h2 {
-        font-size: 1.5rem;
-        transition: all 0.3s;
-        &.major {
-          text-shadow: 0 0 10px #ffffff70;
-        }
+  section.skills {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    h2 {
+      font-size: 1.5rem;
+      transition: all 0.3s;
+      &.major {
+        text-shadow: 0 0 10px #ffffff70;
       }
     }
-    button {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 1rem 2rem;
-      text-transform: uppercase;
-      cursor: pointer;
-      background: #fff;
-      color: #111;
-      border: none;
-      svg {
-        display: inline;
-        font-size: 1.1rem;
-      }
-      @media (max-width: 600px) {
-        padding: 0.5rem 1rem;
-        font-size: 0.7rem;
-      }
-    }
-    @media (max-width: 600px) {
-      padding: 0;
-    }
+  }
+  @media (max-width: 600px) {
+    padding: 0;
   }
   &.light {
     background: #fff;
@@ -85,17 +80,17 @@ main#about {
       img {
         box-shadow: 0 0 20px #00000040;
       }
-    }
-    section.content {
-      button {
-        background: #111;
-        color: #fff;
-        border: none;
-      }
-      section.skills {
-        h2 {
-          &.major {
-            text-shadow: 0 0 8px #00000080;
+      section.content {
+        a {
+          background: #111;
+          color: #fff;
+          border: none;
+        }
+        section.skills {
+          h2 {
+            &.major {
+              text-shadow: 0 0 8px #00000080;
+            }
           }
         }
       }
