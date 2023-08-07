@@ -15,7 +15,7 @@ aside.top {
     text-align: center;
     strong {
       user-select: none;
-      cursor: pointer;
+      cursor: none;
       color: #fff;
     }
   }
@@ -73,7 +73,7 @@ aside.socials {
   align-items: center;
   svg {
     box-sizing: content-box;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding: 0.5rem;
     color: #fff;
     transition: all 300ms;
@@ -82,7 +82,7 @@ aside.socials {
     }
   }
   div.line {
-    height: 10vh;
+    height: 12vh;
     width: 1.5px;
     background: #fff;
     transition: all 0.3s ease;
@@ -90,7 +90,7 @@ aside.socials {
   }
   &:hover {
     div.line {
-      height: 12vh;
+      height: 14vh;
     }
   }
   &.light {
@@ -113,7 +113,7 @@ aside.navigation {
   flex-direction: column;
   align-items: center;
   svg {
-    cursor: pointer;
+    cursor: none;
     position: relative;
     box-sizing: content-box;
     font-size: 1.6rem;
@@ -127,7 +127,9 @@ aside.navigation {
     path {
       pointer-events: none;
     }
-    &.active {
+  }
+  & > a.active {
+    svg {
       font-size: 2.5rem;
       padding: 0.5rem 0;
       opacity: 1;

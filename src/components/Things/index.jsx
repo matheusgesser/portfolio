@@ -7,13 +7,23 @@ import USFlag from '../../assets/flags/us.svg'
 import BRFlag from '../../assets/flags/br.svg'
 
 export function Things({ theme, toggleTheme, lang, toggleLang }) {
-  
-  function handleNav(event) {
-    document.querySelectorAll('.active').forEach(el => {
+
+  document.addEventListener('scroll', () => {
+    let navBar = document.querySelector('aside.navigation')
+    navBar.querySelectorAll('.active').forEach(el => {
       el.classList.remove('active')
     })
-    event.target.classList.add('active')
-  }
+    console.log(scrollY)
+    if (scrollY < 550) {
+      navBar.querySelector('[href="#home"]').classList.add('active')
+    } else if (scrollY > 2700) {
+      navBar.querySelector('[href="#contact"]').classList.add('active')
+    } else if (scrollY > 1600) {
+      navBar.querySelector('[href="#projects"]').classList.add('active')
+    } else if (scrollY > 550) {
+      navBar.querySelector('[href="#about"]').classList.add('active')
+    }
+  })
 
   return (
     <>
@@ -41,10 +51,10 @@ export function Things({ theme, toggleTheme, lang, toggleLang }) {
       </aside>
 
       <aside className={`navigation ${theme}`}>
-        <a href='#home' onClick={handleNav}><AiFillHome className='active' /></a>
-        <a href='#about' onClick={handleNav}><AiFillQuestionCircle /></a>
-        <a href='#projects' onClick={handleNav}><AiFillCode /></a>
-        <a href='#contact' onClick={handleNav}><AiFillMessage /></a>
+        <a href='#home' className='active'><AiFillHome /></a>
+        <a href='#about'><AiFillQuestionCircle /></a>
+        <a href='#projects'><AiFillCode /></a>
+        <a href='#contact'><AiFillMessage /></a>
       </aside>
     </>
   )
