@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Home, About, Projects, Contact } from './pages'
-import { Things } from './components'
+import { Things, Cursor } from './components'
 import BR from './assets/lang/br.json'
 import US from './assets/lang/us.json'
 
@@ -30,6 +30,7 @@ export default function App() {
         <Projects theme={theme} t={translation} />
         <Contact theme={theme} t={translation} />
       </div>
+      <Cursor theme={theme} />
     </>
   )
 }
