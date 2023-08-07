@@ -27,7 +27,6 @@ export function About({ theme, t }) {
         <h2>Sass</h2>
         <h2>NodeJS</h2>
         <h2>SQL</h2>
-        <h2>Git</h2>
       </section>
     </main>
   )
