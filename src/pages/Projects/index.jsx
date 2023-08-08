@@ -6,7 +6,7 @@ export function Projects({ theme, t }) {
 
   return (
     <main id='projects' className={theme}>
-      <h1>Projects</h1>
+      <h1>Projects {t('resume')}</h1>
     </main>
   )
 }

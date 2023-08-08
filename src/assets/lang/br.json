@@ -1,7 +1,11 @@
 {
+  "home": "Início",
+  "about": "Sobre",
+  "projects": "Projetos",
+  "contact": "Contato",
   "position": "Desenvolvedor Front-end",
   "copy": "Copiado!",
-  "about": "Em busca da primeira oportunidade, motivado a trabalhar em projetos desafiadores e contribuir para o sucesso da equipe.",
+  "aboutme": "Em busca da primeira oportunidade, motivado a trabalhar em projetos desafiadores e contribuir para o sucesso da equipe.",
   "resume": "Currículo",
   "pdf": "https://drive.google.com/u/0/uc?id=1FldhmTuagSnz_umI8YZRwX6O5WfqA0TM&export=download"
 }

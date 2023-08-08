@@ -11,7 +11,7 @@ export function About({ theme, t }) {
       <section className="profile">
         <img src={ProfilePic} alt="Matheus' front picture" />
           <section className='content'>
-            <p><span>❝</span>{t('about')}<span>❞</span></p>
+            <p><span>❝</span>{t('aboutme')}<span>❞</span></p>
             <a href={t('pdf')} target='_blank' rel='noreferrer'>
               <RxDownload />{t('resume')}
             </a>

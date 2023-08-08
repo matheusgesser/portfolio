@@ -1,4 +1,6 @@
 import './styles.scss'
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
 import { MdLightMode, MdDarkMode } from 'react-icons/md'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { GrMail } from 'react-icons/gr'
@@ -6,7 +8,7 @@ import { AiFillHome, AiFillQuestionCircle, AiFillCode, AiFillMessage } from 'rea
 import USFlag from '../../assets/flags/us.svg'
 import BRFlag from '../../assets/flags/br.svg'
 
-export function Things({ theme, toggleTheme, lang, toggleLang }) {
+export function Things({ theme, toggleTheme, lang, toggleLang, t }) {
 
   document.addEventListener('scroll', () => {
     let navBar = document.querySelector('aside.navigation')
@@ -32,12 +34,12 @@ export function Things({ theme, toggleTheme, lang, toggleLang }) {
           <strong>MG {theme} {lang}</strong>
         </a>
         <button className='theme-switcher' onClick={toggleTheme}>
-          {theme == 'light' ?
+          {theme == 'dark' ?
           <MdDarkMode /> :
           <MdLightMode />}
         </button>
         <button className='lang-switcher' onClick={toggleLang}>
-          {lang == 'br' ?
+          {lang == 'us' ?
           <img src={USFlag} alt='United States Flag' /> :
           <img src={BRFlag} alt='Brazil Flag' />}
         </button>
@@ -51,10 +53,18 @@ export function Things({ theme, toggleTheme, lang, toggleLang }) {
       </aside>
 
       <aside className={`navigation ${theme}`}>
-        <a href='#home' className='active'><AiFillHome /></a>
-        <a href='#about'><AiFillQuestionCircle /></a>
-        <a href='#projects'><AiFillCode /></a>
-        <a href='#contact'><AiFillMessage /></a>
+        <Tippy placement='left' content={t('home')} className={theme}>
+          <a href='#home' className='active'><AiFillHome /></a>
+        </Tippy>
+        <Tippy placement='left' content={t('about')} className={theme}>
+          <a href='#about'><AiFillQuestionCircle /></a>
+        </Tippy>
+        <Tippy placement='left' content={t('projects')} className={theme}>
+          <a href='#projects'><AiFillCode /></a>
+        </Tippy>
+        <Tippy placement='left' content={t('contact')} className={theme}>
+          <a href='#contact'><AiFillMessage /></a>
+        </Tippy>
       </aside>
     </>
   )

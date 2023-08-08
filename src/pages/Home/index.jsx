@@ -35,9 +35,9 @@ export function Home({ theme, t }) {
           <RxCopy />matheusmvg@hotmail.com
         </button>
       </Tippy>
-        <img src={JSLogo} id='js' data-speedx={-30} data-speedy={-50} alt="JavaScript Logo" />
-        <img src={ReactLogo} id='react' data-speedx={60} data-speedy={-40} alt="React Logo" />
-        <img src={SassLogo} id='sass' data-speedx={-50} data-speedy={60} alt="Sass Logo" />
+      <img src={JSLogo} id='js' data-speedx={-30} data-speedy={-50} alt="JavaScript Logo" />
+      <img src={ReactLogo} id='react' data-speedx={60} data-speedy={-40} alt="React Logo" />
+      <img src={SassLogo} id='sass' data-speedx={-50} data-speedy={60} alt="Sass Logo" />
     </main>
   )
 }

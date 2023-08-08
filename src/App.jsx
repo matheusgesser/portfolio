@@ -23,7 +23,7 @@ export default function App() {
 
   return (
     <>
-      <Things theme={theme} toggleTheme={toggleTheme} lang={lang} toggleLang={toggleLang} />
+      <Things theme={theme} toggleTheme={toggleTheme} lang={lang} toggleLang={toggleLang} t={translation} />
       <div className="pages">
         <Home theme={theme} t={translation} />
         <About theme={theme} t={translation} />

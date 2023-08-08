@@ -10,6 +10,7 @@ main#about {
       border-radius: 50%;
       filter: contrast(1.05);
       transform: rotate(2deg);
+      user-select: none;
     }
     section.content {
       display: flex;
@@ -60,9 +61,12 @@ main#about {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
     padding: 2rem;
     h2 {
+      border: 1px solid #fff;
+      border-radius: 2rem;
+      padding: 0 1rem;
       font-size: 1.5rem;
       transition: all 0.3s;
       &.major {
@@ -86,12 +90,13 @@ main#about {
           color: #fff;
           border: none;
         }
-        section.skills {
-          h2 {
-            &.major {
-              text-shadow: 0 0 8px #00000080;
-            }
-          }
+      }
+    }
+    section.skills {
+      h2 {
+        border: 1px solid #000;
+        &.major {
+          text-shadow: 0 0 8px #00000070;
         }
       }
     }
