@@ -6,17 +6,21 @@ import { useAnimations } from './useAnimations'
 import { RxCopy } from 'react-icons/rx'
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
+import { gsap } from 'gsap'
 
 
 export function Home({ theme, t }) {
   useAnimations()
-  
-  function IconMove(event) {
+
+  function moveElements(event) {
     let { clientX: posX, clientY: posY } = event;
-    let icons = document.querySelectorAll('[data-speedx]')
-    icons.forEach(icon => {
-      icon.style.transform = `translate(${posX*icon.dataset.speedx/window.innerWidth}px, ${posY*icon.dataset.speedy/window.innerHeight}px)`
-    })
+    let elements = document.querySelectorAll('[data-speedx]')
+    elements.forEach(element => {
+      let moveX = gsap.quickTo(element, "x", {duration: 0.2, ease: "power3"})
+      let moveY = gsap.quickTo(element, "y", {duration: 0.2, ease: "power3"})
+      moveX(`${posX*element.dataset.speedx/window.innerWidth}`)
+      moveY(`${posY*element.dataset.speedy/window.innerHeight}`)
+    });
   }
 
   function copyMail(event) {
@@ -27,7 +31,7 @@ export function Home({ theme, t }) {
   }
 
   return (
-    <main id='home' className={theme} onMouseMove={IconMove}>
+    <main id='home' className={theme} onMouseMove={moveElements}>
       <h1 data-speedx={20} data-speedy={0}>Matheus Gesser</h1>
       <h2 data-speedx={15} data-speedy={0}>{t('position')}</h2>
       <Tippy trigger='click' placement='bottom' content={t('copy')} className={theme}>

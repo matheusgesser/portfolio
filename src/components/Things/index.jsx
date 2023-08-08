@@ -15,7 +15,6 @@ export function Things({ theme, toggleTheme, lang, toggleLang, t }) {
     navBar.querySelectorAll('.active').forEach(el => {
       el.classList.remove('active')
     })
-    console.log(scrollY)
     if (scrollY < 550) {
       navBar.querySelector('[href="#home"]').classList.add('active')
     } else if (scrollY > 2700) {
