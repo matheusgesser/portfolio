@@ -3,6 +3,7 @@
   left: 0;
   top: 0;
   pointer-events: none;
+  overflow: hidden;
 }
 
 @media not (any-pointer: coarse) {
@@ -14,14 +15,15 @@
   .cursor {
     border-radius: 50%;
     z-index: 100;
+    opacity: 0;
     &.large {
       width: 40px;
       height: 40px;
       border: 1px solid #fff;
     }
     &.small {
-      width: 10px;
-      height: 10px;
+      width: 8px;
+      height: 8px;
       background: #fff;
       transform: translate(-50%, -50%);
     }

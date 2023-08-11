@@ -15,10 +15,6 @@ export function Cursor({ theme }) {
       backgroundColor: "#88888825",
       ease: 'power3'
     });
-    gsap.to(cursorSmall, {
-      opacity: 0,
-      ease: 'power3'
-    });
   }
   
   function handleMouseLeave() {
@@ -29,11 +25,9 @@ export function Cursor({ theme }) {
       backgroundColor: "transparent",
       ease: 'power3'
     });
-    gsap.to(cursorSmall, {
-      opacity: 1,
-      ease: 'power3'
-    });
   }
+
+  let mouse = {x:0, y:0}
 
   useEffect(() => {
     if (cursorLarge.current) {
@@ -43,18 +37,25 @@ export function Cursor({ theme }) {
       gsap.set(cursorSmall, {xPercent: -50, yPercent: -50})
       gsap.set(cursorLarge, {xPercent: -50, yPercent: -50})
 
-      let xToSmall = gsap.quickTo(cursorSmall, "x", {duration: 0.01, ease: "none"})
-      let yToSmall = gsap.quickTo(cursorSmall, "y", {duration: 0.01, ease: "none"})
+      let xSetterSmall = gsap.quickSetter(cursorSmall, "x", "px")
+      let ySetterSmall = gsap.quickSetter(cursorSmall, "y", "px")
       
       let xToLarge = gsap.quickTo(cursorLarge, "x", {duration: 0.8, ease: "expo"})
       let yToLarge = gsap.quickTo(cursorLarge, "y", {duration: 0.8, ease: "expo"})
+      
+      let ySetterLarge = gsap.quickSetter(cursorLarge, "y", "px")
 
       document.body.addEventListener("mousemove", (e) => {
-        xToSmall(e.pageX);
-        yToSmall(e.pageY);
+        gsap.to('.cursor', {
+          duration: 2,
+          opacity: 1
+        })
+        xSetterSmall(e.pageX);
+        ySetterSmall(e.pageY);
 
         xToLarge(e.pageX);
         yToLarge(e.pageY);
+        mouse = {x: e.pageX, y: e.pageY}
       });
       
       const elements = document.querySelectorAll('button, a, h1, h2, p')
@@ -70,7 +71,7 @@ export function Cursor({ theme }) {
           scale: 2,
         });
         gsap.to(cursorLarge, {
-          duration: 0.3,
+          duration: 0.8,
           backgroundColor: 'transparent',
         });
       });
@@ -79,6 +80,15 @@ export function Cursor({ theme }) {
           duration: 0.15,
           scale: 1,
         });
+      });
+
+      let lastScrollValue = 0
+      window.addEventListener("scroll", () => {
+        let scrolled = scrollY - lastScrollValue
+        ySetterSmall(mouse.y + scrolled)
+        ySetterLarge(mouse.y + scrolled)
+        mouse = {...mouse, y: mouse.y + scrolled}
+        lastScrollValue = scrollY
       });
 
     }
