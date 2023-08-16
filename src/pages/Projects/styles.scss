@@ -1,4 +1,113 @@
-main#projects {
-  & .light {
+article#projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  section.post {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    div.swiper {
+      width: 90%;
+      max-width: 40rem;
+      border-radius: 1rem;
+    }
+    button {
+      position: absolute;
+      font-size: 4rem;
+      padding: 1rem;
+      background: none;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      &.prev-btn {
+        left: 10vw;
+      }
+      &.next-btn {
+        right: 10vw;
+      }
+      @media (max-width: 1300px) {
+        font-size: 3rem;
+        padding: 0.5rem;
+        &.prev-btn {
+          left: 0;
+        }
+        &.next-btn {
+          right: 0;
+        }
+      }
+      @media (max-width: 1000px) {
+        font-size: 1.5rem;
+        padding: 0.25rem;
+        &.prev-btn {
+          left: -1.5rem;
+        }
+        &.next-btn {
+          right: -1.5rem;
+        }
+      }
+    }
+    img.laptop-overlay {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 54rem;
+      height: 103%;
+      pointer-events: none;
+      z-index: 1;
+      @media (max-width: 1000px) {
+        width: 120%;
+      }
+    }
+  }
+  section.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    section.labels {
+      display: flex;
+      gap: 0.25rem;
+      i {
+        font-style: normal;
+        padding: 0 0.5rem;
+        border: 1px solid #111;
+        border-radius: 4px;
+      }
+    }
+    section.buttons {
+      display: flex;
+      gap: 0.25rem;
+      button {
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+        background: #111;
+        color: #fff;
+        cursor: pointer;
+        padding: 0 1rem;
+        border: none;
+        border-radius: 2rem;
+        transition: transform 300ms;
+        &:hover {
+          transform: scale(1.1);
+        }
+        & > svg {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+  &.light {
+    background: #fff;
+    color: #111;
+    section.post {
+      background: #fff;
+      box-shadow: 0 3px 50px #ccc;
+    }
   }
 }
