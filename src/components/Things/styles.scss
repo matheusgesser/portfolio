@@ -15,7 +15,6 @@ aside.top {
     text-align: center;
     strong {
       user-select: none;
-      cursor: none;
       color: #fff;
     }
   }
@@ -60,13 +59,18 @@ aside.top {
       color: #000;
     }
   }
+  @media (max-width: 1000px) {
+    a {
+      padding: 0.5rem 0;
+    }
+  }
 }
 
 aside.socials {
   z-index: 1;
   position: fixed;
   bottom: 0;
-  padding: 1rem;
+  padding-left: 1rem;
   padding-bottom: 0;
   display: flex;
   flex-direction: column;
@@ -101,6 +105,9 @@ aside.socials {
       background: #000;
     }
   }
+  @media (max-width: 1000px) {
+    padding-left: 0.5rem;
+  }
 }
 
 aside.navigation {
@@ -108,12 +115,11 @@ aside.navigation {
   position: fixed;
   bottom: 40%;
   right: 0;
-  padding: 1rem;
+  padding-right: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   svg {
-    cursor: none;
     position: relative;
     box-sizing: content-box;
     font-size: 1.6rem;
@@ -139,5 +145,8 @@ aside.navigation {
     svg {
       color: #000;
     }
+  }
+  @media (max-width: 1000px) {
+    padding-right: 0.5rem;
   }
 }

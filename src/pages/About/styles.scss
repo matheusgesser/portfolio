@@ -1,4 +1,4 @@
-main#about {
+article#about {
   section.profile {
     display: flex;
     align-items: center;
@@ -74,9 +74,7 @@ main#about {
       }
     }
   }
-  @media (max-width: 600px) {
-    padding: 0;
-  }
+
   &.light {
     background: #fff;
     color: #111;

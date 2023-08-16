@@ -41,7 +41,7 @@ export function Cursor({ theme }) {
         yToLarge(e.clientY);
       });
       
-      const elements = document.querySelectorAll('button, a, h1, h2, p')
+      const elements = document.querySelectorAll('button, a')
       elements.forEach((element) => {
         element.addEventListener("mouseenter", handleMouseEnter);
         element.addEventListener("mouseleave", handleMouseLeave);

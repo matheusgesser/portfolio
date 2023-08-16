@@ -31,7 +31,7 @@ export function Home({ theme, t }) {
   }
 
   return (
-    <main id='home' className={theme} onMouseMove={moveElements}>
+    <article id='home' className={theme} onMouseMove={moveElements}>
       <h1 data-speedx={20} data-speedy={0}>Matheus Gesser</h1>
       <h2 data-speedx={15} data-speedy={0}>{t('position')}</h2>
       <Tippy trigger='click' placement='bottom' content={t('copy')} className={theme}>
@@ -42,6 +42,6 @@ export function Home({ theme, t }) {
       <img src={JSLogo} id='js' data-speedx={-30} data-speedy={-50} alt="JavaScript Logo" />
       <img src={ReactLogo} id='react' data-speedx={60} data-speedy={-40} alt="React Logo" />
       <img src={SassLogo} id='sass' data-speedx={-50} data-speedy={60} alt="Sass Logo" />
-    </main>
+    </article>
   )
 }

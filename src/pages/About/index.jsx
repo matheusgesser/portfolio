@@ -7,7 +7,7 @@ export function About({ theme, t }) {
   useAnimations()
 
   return (
-    <main id='about' className={theme}>
+    <article id='about' className={theme}>
       <section className="profile">
         <img src={ProfilePic} alt="Matheus' front picture" />
           <section className='content'>
@@ -28,6 +28,6 @@ export function About({ theme, t }) {
         <h2>NodeJS</h2>
         <h2>SQL</h2>
       </section>
-    </main>
+    </article>
   )
 }

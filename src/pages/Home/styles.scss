@@ -1,10 +1,11 @@
-main#home {
+article#home {
   position: relative;
   color: #fff;
   text-align: center;
   h1 {
     font-size: 4rem;
     font-weight: 800;
+    letter-spacing: -3px;
     line-height: 4rem;
     text-shadow: 0 0 7px #555, 0 0 10px #555, 0 0 21px #555;
     @media (max-width: 800px) {
@@ -23,7 +24,7 @@ main#home {
     text-shadow: 0 0 7px #444, 0 0 10px #444, 0 0 21px #444;
     @media (max-width: 800px) {
       font-size: 1.5rem;
-      line-height: 0.7rem;
+      line-height: 1rem;
     }
   }
   button {
@@ -63,27 +64,27 @@ main#home {
     }
   }
   img#js {
-    top: 18vh;
-    right: 16vw;
+    top: 14vh;
+    right: 8vw;
     @media (max-width: 500px) {
       top: 14vh;
-      right: 0;
+      right: -3vh;
     }
   }
   img#react {
-    top: 28vh;
-    left: 12vw;
+    top: 21vh;
+    left: 6vw;
     @media (max-width: 500px) {
       top: 20vh;
-      left: 0;
+      left: -4vh;
     }
   }
   img#sass {
-    bottom: 16vh;
-    right: 26vw;
+    bottom: 21vh;
+    right: 12vw;
     @media (max-width: 500px) {
-      bottom: 15vh;
-      right: 8vw;
+      bottom: 20vh;
+      right: 0;
     }
   }
   &.light {
