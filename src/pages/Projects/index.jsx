@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import './styles.scss'
 
-import { CgWebsite } from 'react-icons/cg'
+import { AiOutlineDesktop, AiOutlineGithub } from 'react-icons/ai'
 import { MdArrowBackIosNew, MdArrowForwardIos } from 'react-icons/md'
 import Laptop from '../../assets/projects/laptop.png'
 import { gsap } from 'gsap';
@@ -17,7 +17,7 @@ export function Projects({ theme, t }) {
   function handleChange(e) {
     if (projectShown == e.realIndex) return
     setProjectShown(e.realIndex)
-    gsap.fromTo('section.info', {y: -100, opacity: 0}, {y: 0, opacity: 1, duration: .7})
+    gsap.fromTo('section.info', {opacity: 0}, {opacity: 1, duration: 1})
   }
   
   function handlePrevious() {
@@ -59,8 +59,8 @@ export function Projects({ theme, t }) {
           {t(ProjectsData[projectShown].description)}
         </p>
         <section className="buttons">
-          <button>Demo <CgWebsite /></button>
-          <button>GitHub</button>
+          <button><AiOutlineDesktop />Live Demo</button>
+          <button><AiOutlineGithub />Repository</button>
         </section>
       </section>
     </article>

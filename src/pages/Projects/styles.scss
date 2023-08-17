@@ -50,10 +50,10 @@ article#projects {
         font-size: 1.5rem;
         padding: 0.25rem;
         &.prev-btn {
-          left: -1.5rem;
+          left: -1rem;
         }
         &.next-btn {
-          right: -1.5rem;
+          right: -1rem;
         }
       }
     }
@@ -76,36 +76,48 @@ article#projects {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
+    text-align: center;
+    gap: 1rem;
     section.labels {
       display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
       gap: 0.25rem;
       i {
         font-style: normal;
         padding: 0 0.5rem;
+        text-align: center;
         border: 1px solid #fff;
         border-radius: 4px;
       }
     }
     section.buttons {
       display: flex;
-      gap: 0.25rem;
+      gap: 0.5rem;
       button {
         display: flex;
         align-items: center;
-        gap: 0.2rem;
-        background: #111;
-        color: #fff;
+        gap: 0.5rem;
+        background: #fff;
+        color: #111;
+        font-size: 1rem;
         cursor: pointer;
-        padding: 0 1rem;
+        padding: 0.5rem 2rem;
         border: none;
-        border-radius: 2rem;
-        transition: transform 300ms;
+        transition-property: box-shadow, color;
+        transition-duration: 500ms;
+        box-shadow: inset 0 0 0 0 #000;
         &:hover {
-          transform: scale(1.1);
+          box-shadow: inset 0 -5rem 0 0 #000;
+          color: #fff;
         }
         & > svg {
+          font-size: 1rem;
+          transition-duration: 0ms;
+        }
+        @media (max-width: 500px) {
           font-size: 0.8rem;
+          padding: 0.3rem 0.7rem;
         }
       }
     }
@@ -123,6 +135,11 @@ article#projects.light {
     section.labels {
       i {
         border-color: #111;
+      }
+    }
+    section.buttons {
+      & > button {
+        border: 1px solid #000;
       }
     }
   }
