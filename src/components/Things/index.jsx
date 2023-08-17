@@ -17,9 +17,9 @@ export function Things({ theme, toggleTheme, lang, toggleLang, t }) {
     })
     if (scrollY < 550) {
       navBar.querySelector('[href="#home"]').classList.add('active')
-    } else if (scrollY > 2700) {
+    } else if (scrollY > 2100) {
       navBar.querySelector('[href="#contact"]').classList.add('active')
-    } else if (scrollY > 1600) {
+    } else if (scrollY > 1200) {
       navBar.querySelector('[href="#projects"]').classList.add('active')
     } else if (scrollY > 550) {
       navBar.querySelector('[href="#about"]').classList.add('active')
