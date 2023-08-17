@@ -3,6 +3,7 @@ import { Home, About, Projects, Contact } from './pages'
 import { Things, Cursor } from './components'
 import BR from './assets/lang/br.json'
 import US from './assets/lang/us.json'
+import { gsap } from 'gsap'
 
 
 export default function App() {
@@ -10,6 +11,7 @@ export default function App() {
   const [lang, setLang] = useState('br')
 
   function toggleTheme() {
+    gsap.fromTo('.theme-switcher', {rotate: '360deg', scale: 0}, {rotate: 0, scale: 1, duration: 1})
     setTheme(theme == 'dark' ? 'light' : 'dark')
   }
 

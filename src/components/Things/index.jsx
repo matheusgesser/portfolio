@@ -65,6 +65,8 @@ export function Things({ theme, toggleTheme, lang, toggleLang, t }) {
           <a href='#contact'><AiFillMessage /></a>
         </Tippy>
       </aside>
+
+      <div className={`bg ${theme}`}></div>
     </>
   )
 }

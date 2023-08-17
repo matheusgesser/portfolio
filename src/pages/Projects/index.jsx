@@ -8,6 +8,7 @@ import './styles.scss'
 import { CgWebsite } from 'react-icons/cg'
 import { MdArrowBackIosNew, MdArrowForwardIos } from 'react-icons/md'
 import Laptop from '../../assets/projects/laptop.png'
+import { gsap } from 'gsap';
 
 export function Projects({ theme, t }) {
   const swiper = useRef(null);
@@ -15,6 +16,7 @@ export function Projects({ theme, t }) {
 
   function handleChange(e) {
     setProjectShown(e.realIndex)
+    gsap.fromTo('section.info', {y: -100, opacity: 0}, {y: 0, opacity: 1, duration: .7})
   }
   
   function handlePrevious() {
