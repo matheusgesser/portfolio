@@ -15,6 +15,7 @@ export function Projects({ theme, t }) {
   const [projectShown, setProjectShown] = useState(0)
 
   function handleChange(e) {
+    if (projectShown == e.realIndex) return
     setProjectShown(e.realIndex)
     gsap.fromTo('section.info', {y: -100, opacity: 0}, {y: 0, opacity: 1, duration: .7})
   }

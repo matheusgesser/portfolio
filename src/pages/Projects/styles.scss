@@ -83,7 +83,7 @@ article#projects {
       i {
         font-style: normal;
         padding: 0 0.5rem;
-        border: 1px solid #111;
+        border: 1px solid #fff;
         border-radius: 4px;
       }
     }
@@ -117,6 +117,13 @@ article#projects.light {
   section.post {
     & > button {
       color: #000;
+    }
+  }
+  section.info {
+    section.labels {
+      i {
+        border-color: #111;
+      }
     }
   }
 }
