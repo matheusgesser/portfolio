@@ -7,19 +7,15 @@ export function Cursor({ theme }) {
   let cursorLarge = useRef(null)
 
   function handleMouseEnter() {
-    gsap.to(cursorLarge, {
-      width: '15px',
-      height: '15px',
-      ease: 'power3'
-    });
+    gsap.fromTo(cursorLarge,
+      {width: '40px', height: '40px'},
+      {width: '20px', height: '20px', ease: 'power3'});
   }
   
   function handleMouseLeave() {
-    gsap.to(cursorLarge, {
-      width: '40px',
-      height: '40px',
-      ease: 'power3'
-    });
+    gsap.fromTo(cursorLarge,
+      {width: '20px', height: '20px'},
+      {width: '40px', height: '40px', ease: 'power3'});
   }
 
   useEffect(() => {
