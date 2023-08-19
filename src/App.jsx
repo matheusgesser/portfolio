@@ -10,9 +10,9 @@ export default function App() {
   const [theme, setTheme] = useState('dark')
   const [lang, setLang] = useState('br')
 
-  function toggleTheme() {
+  function handleToggleTheme() {
+    setTheme((prevTheme) => prevTheme == 'dark' ? 'light' : 'dark')
     gsap.fromTo('.theme-switcher', {rotate: '360deg', scale: 0}, {rotate: 0, scale: 1, duration: 1})
-    setTheme(theme == 'dark' ? 'light' : 'dark')
   }
 
   function toggleLang() {
@@ -25,7 +25,7 @@ export default function App() {
 
   return (
     <>
-      <Things theme={theme} toggleTheme={toggleTheme} lang={lang} toggleLang={toggleLang} t={translation} />
+      <Things theme={theme} handleToggleTheme={handleToggleTheme} lang={lang} toggleLang={toggleLang} t={translation} />
       <main className="pages">
         <Home theme={theme} t={translation} />
         <About theme={theme} t={translation} />
