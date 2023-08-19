@@ -46,7 +46,7 @@ article#about {
         }
         @keyframes pulse {
           0% {
-            box-shadow: 0 0 0 0 #ffffff50;
+            box-shadow: 0 0 0 0 green;
           }
         }
         svg {
@@ -84,32 +84,32 @@ article#about {
       }
     }
   }
+}
 
-  &.light {
-    color: #111;
-    section.profile {
-      img {
-        box-shadow: 0 0 20px #00000040;
-      }
-      section.content {
-        a {
-          background: #111;
-          color: #fff;
-          border: none;
-          @keyframes pulse {
-            0% {
-              box-shadow: 0 0 0 0 #00000050;
-            }
+article#about.light {
+  color: #111;
+  section.profile {
+    img {
+      box-shadow: 0 0 20px #00000040;
+    }
+    section.content {
+      a {
+        background: #111;
+        color: #fff;
+        border: none;
+        @keyframes pulse {
+          0% {
+            box-shadow: 0 0 0 0 #00000050;
           }
         }
       }
     }
-    section.skills {
-      h2 {
-        border: 1px solid #000;
-        &.major {
-          text-shadow: 0 0 8px #00000070;
-        }
+  }
+  section.skills {
+    h2 {
+      border: 1px solid #000;
+      &.major {
+        text-shadow: 0 0 8px #00000070;
       }
     }
   }

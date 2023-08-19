@@ -8,8 +8,7 @@ import { AiFillHome, AiFillQuestionCircle, AiFillCode, AiFillMessage } from 'rea
 import USFlag from '../../assets/flags/us.svg'
 import BRFlag from '../../assets/flags/br.svg'
 
-export function Things({ theme, toggleTheme, lang, toggleLang, t }) {
-
+export function Things({ theme, handleToggleTheme, lang, toggleLang, t }) {
   document.addEventListener('scroll', () => {
     let navBar = document.querySelector('aside.navigation')
     navBar.querySelectorAll('.active').forEach(el => {
@@ -30,9 +29,12 @@ export function Things({ theme, toggleTheme, lang, toggleLang, t }) {
     <>
       <aside className={`top ${theme}`}>
         <a href='#home'>
-          <strong>MG {theme} {lang}</strong>
+          <strong>M</strong>
+          <span className="hover-reveal">atheus</span>
+          <strong>G</strong>
+          <span className="hover-reveal">esser</span>
         </a>
-        <button className='theme-switcher' onClick={toggleTheme}>
+        <button className='theme-switcher' onClick={handleToggleTheme}>
           {theme == 'dark' ?
           <MdDarkMode /> :
           <MdLightMode />}

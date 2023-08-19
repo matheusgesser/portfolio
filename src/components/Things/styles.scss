@@ -13,9 +13,24 @@ aside.top {
     margin-right: auto;
     text-decoration: none;
     text-align: center;
-    strong {
+    strong,
+    span {
+      font-weight: 700;
       user-select: none;
       color: #fff;
+    }
+    span.hover-reveal {
+      letter-spacing: -12px;
+      clip-path: inset(-1rem 100% 0 0);
+      transition-property: clip-path, letter-spacing;
+      transition-duration: 300ms;
+      transition-timing-function: ease-out;
+    }
+    &:hover {
+      & span.hover-reveal {
+        clip-path: inset(0);
+        letter-spacing: -1px;
+      }
     }
   }
   button {
