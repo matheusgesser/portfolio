@@ -48,13 +48,16 @@ aside.top {
     svg {
       height: 100%;
       width: 80%;
-      transition: all 10s;
       &:nth-child(1) {
         color: #fff;
       }
       &:nth-child(2) {
         color: #000;
       }
+    }
+    transition: rotate 10s ease-in;
+    &:hover {
+      rotate: 2000deg;
     }
   }
   .lang-switcher {
