@@ -136,6 +136,9 @@ aside.socials {
   @media (max-width: 1000px) {
     padding-left: 0.5rem;
   }
+  @media (max-width: 600px) {
+    display: none;
+  }
 }
 
 aside.navigation {
@@ -176,5 +179,8 @@ aside.navigation {
   }
   @media (max-width: 1000px) {
     padding-right: 0.5rem;
+  }
+  @media (max-width: 600px) {
+    display: none;
   }
 }
