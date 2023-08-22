@@ -10,6 +10,7 @@ export function useAnimations() {
           trigger: '#home',
           start: 'top center',
           end: 'bottom top',
+          toggleActions: 'play none play none'
         },
       })
       homeAnim.from('#react', {

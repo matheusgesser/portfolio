@@ -24,10 +24,10 @@ export function Cursor({ theme }) {
 
       gsap.set(cursorLarge, {xPercent: -50, yPercent: -50})
       
-      let xToLarge = gsap.quickTo(cursorLarge, "x", {duration: 0.8, ease: "expo"})
-      let yToLarge = gsap.quickTo(cursorLarge, "y", {duration: 0.8, ease: "expo"})
+      let xToLarge = gsap.quickTo(cursorLarge, 'x', {duration: 0.8, ease: 'expo'})
+      let yToLarge = gsap.quickTo(cursorLarge, 'y', {duration: 0.8, ease: 'expo'})
       
-      document.body.addEventListener("mousemove", (e) => {
+      document.body.addEventListener('mousemove', (e) => {
         gsap.to('.cursor', {
           duration: 2,
           opacity: 1
@@ -39,8 +39,8 @@ export function Cursor({ theme }) {
       
       const elements = document.querySelectorAll('button, a')
       elements.forEach((element) => {
-        element.addEventListener("mouseenter", handleMouseEnter);
-        element.addEventListener("mouseleave", handleMouseLeave);
+        element.addEventListener('mouseenter', handleMouseEnter);
+        element.addEventListener('mouseleave', handleMouseLeave);
       });
 
     }

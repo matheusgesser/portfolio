@@ -40,13 +40,19 @@ article#home {
     border: none;
     border-radius: 20rem;
     user-select: none;
+    &:hover {
+      background: #eee;
+    }
     svg {
       display: inline;
       font-size: 1rem;
     }
     @media (max-width: 600px) {
-      padding: 0.5rem 1rem;
+      padding: 0.5rem 0.75rem;
       font-size: 0.7rem;
+      svg {
+        font-size: 0.4rem;
+      }
     }
   }
   img {

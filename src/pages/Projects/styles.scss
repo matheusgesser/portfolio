@@ -170,6 +170,9 @@ article#projects {
           padding: 0.3rem 0.7rem;
         }
       }
+      @media (max-width: 300px) {
+        flex-direction: column;
+      }
     }
   }
   @media (max-width: 900px) {

@@ -21,7 +21,7 @@ export function Things({ theme, handleToggleTheme, lang, toggleLang, t }) {
     } else if (scrollY > 1200) {
       navBar.querySelector('[href="#projects"]').classList.add('active')
     } else if (scrollY > 550) {
-      navBar.querySelector('[href="#about"]').classList.add('active')
+      navBar.querySelector("[href='#about']").classList.add('active')
     }
   })
 
@@ -30,9 +30,9 @@ export function Things({ theme, handleToggleTheme, lang, toggleLang, t }) {
       <aside className={`top ${theme}`}>
         <a href='#home'>
           <strong>M</strong>
-          <span className="hover-reveal">atheus</span>
+          <span className='hover-reveal'>atheus</span>
           <strong>G</strong>
-          <span className="hover-reveal">esser</span>
+          <span className='hover-reveal'>esser</span>
         </a>
         <button className='theme-switcher' onClick={handleToggleTheme}>
           {theme == 'dark' ?

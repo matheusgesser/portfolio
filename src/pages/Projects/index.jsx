@@ -1,7 +1,7 @@
 import { ProjectsData } from '../../assets/data/projects'
 import { useRef, useState } from 'react';
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 import './styles.scss'
 
 import { AiOutlineDesktop, AiOutlineGithub } from 'react-icons/ai'
@@ -29,8 +29,8 @@ export function Projects({ theme, t }) {
 
   return (
     <article id='projects' className={theme}>
-      <section className="post">
-        <button className="prev-btn" onClick={handlePrevious}>
+      <section className='post'>
+        <button className='prev-btn' onClick={handlePrevious}>
           <MdArrowBackIosNew />
         </button>
         <Swiper loop grabCursor ref={swiper} onSlideChange={handleChange}>
@@ -40,15 +40,15 @@ export function Projects({ theme, t }) {
             </SwiperSlide>
           ))}
         </Swiper>
-        <button className="next-btn" onClick={handleNext}>
+        <button className='next-btn' onClick={handleNext}>
           <MdArrowForwardIos />
         </button>
-        <img className="laptop-overlay" src={Laptop}>
+        <img className='laptop-overlay' src={Laptop}>
           
         </img>
       </section>
-      <section className="info">
-        <section className="labels">
+      <section className='info'>
+        <section className='labels'>
           {ProjectsData[projectShown].labels.map(label => <i key={label}>{label}</i>)}
         </section>
         <h2>
@@ -57,7 +57,7 @@ export function Projects({ theme, t }) {
         <p>
           {t(ProjectsData[projectShown].description)}
         </p>
-        <section className="links">
+        <section className='links'>
           <a
             href={ProjectsData[projectShown].deploylink}
             target='_blank'

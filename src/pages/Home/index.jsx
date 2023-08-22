@@ -15,8 +15,8 @@ export function Home({ theme, t }) {
     let { clientX: posX, clientY: posY } = event;
     let elements = document.querySelectorAll('[data-speedx]')
     elements.forEach(element => {
-      let moveX = gsap.quickTo(element, "x", {duration: 0.2, ease: "power3"})
-      let moveY = gsap.quickTo(element, "y", {duration: 0.2, ease: "power3"})
+      let moveX = gsap.quickTo(element, 'x', {duration: 0.2, ease: 'power3'})
+      let moveY = gsap.quickTo(element, 'y', {duration: 0.2, ease: 'power3'})
       moveX(`${posX*element.dataset.speedx/window.innerWidth}`)
       moveY(`${posY*element.dataset.speedy/window.innerHeight}`)
     });
@@ -38,9 +38,9 @@ export function Home({ theme, t }) {
           <RxCopy />matheusmvg@hotmail.com
         </button>
       </Tippy>
-      <img src={JSLogo} id='js' data-speedx={-30} data-speedy={-50} alt="JavaScript Logo" />
-      <img src={ReactLogo} id='react' data-speedx={60} data-speedy={-40} alt="React Logo" />
-      <img src={SassLogo} id='sass' data-speedx={-50} data-speedy={60} alt="Sass Logo" />
+      <img src={JSLogo} id='js' data-speedx={-30} data-speedy={-50} alt='JavaScript Logo' />
+      <img src={ReactLogo} id='react' data-speedx={60} data-speedy={-40} alt='React Logo' />
+      <img src={SassLogo} id='sass' data-speedx={-50} data-speedy={60} alt='Sass Logo' />
     </article>
   )
 }

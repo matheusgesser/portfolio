@@ -6,8 +6,8 @@ export function About({ theme, t }) {
 
   return (
     <article id='about' className={theme}>
-      <section className="profile">
-        <img src={ProfilePic} alt="Matheus' front picture" />
+      <section className='profile'>
+        <img src={ProfilePic} alt='Matheus front picture' />
           <section className='content'>
             <p><span>❝</span>{t('aboutme')}<span>❞</span></p>
             <a href={t('pdf')} target='_blank' rel='noreferrer'>
@@ -15,7 +15,7 @@ export function About({ theme, t }) {
             </a>
           </section>
       </section>
-      <section className="skills">
+      <section className='skills'>
         <h2 className='major'>React</h2>
         <h2 className='major'>JavaScript</h2>
         <h2>TypeScript</h2>

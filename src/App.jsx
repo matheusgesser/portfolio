@@ -7,7 +7,6 @@ import { gsap } from 'gsap'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 
-
 export default function App() {
   const [theme, setTheme] = useState('dark')
   const [lang, setLang] = useState('br')
@@ -21,14 +20,14 @@ export default function App() {
     setLang(lang == 'br' ? 'us' : 'br')
   }
 
-  function translation(id) {
-    return lang == 'br' ? BR[`${id}`] : US[`${id}`]
+  function translation(key) {
+    return lang == 'br' ? BR[`${key}`] : US[`${key}`]
   }
 
   return (
     <>
       <Things theme={theme} handleToggleTheme={handleToggleTheme} lang={lang} toggleLang={toggleLang} t={translation} />
-      <main className="pages">
+      <main className='pages'>
         <Home theme={theme} t={translation} />
         <About theme={theme} t={translation} />
         <Projects theme={theme} t={translation} />
@@ -36,7 +35,7 @@ export default function App() {
       </main>
       <Cursor theme={theme} />
       <ToastContainer
-        position="top-center"
+        position='top-center'
         autoClose={5000}
         hideProgressBar={false}
         newestOnTop={false}
@@ -45,7 +44,7 @@ export default function App() {
         pauseOnFocusLoss
         draggable={false}
         pauseOnHover={false}
-        theme="colored"
+        theme='colored'
       />
     </>
   )
