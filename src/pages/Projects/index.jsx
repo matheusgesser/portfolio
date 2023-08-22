@@ -58,9 +58,19 @@ export function Projects({ theme, t }) {
         <p>
           {t(ProjectsData[projectShown].description)}
         </p>
-        <section className="buttons">
-          <button><AiOutlineDesktop />Live Demo</button>
-          <button><AiOutlineGithub />Repository</button>
+        <section className="links">
+          <a
+            href={ProjectsData[projectShown].deploylink}
+            target='_blank'
+            rel='noreferrer'>
+            <AiOutlineDesktop />{t('deploy')}
+          </a>
+          <a
+            href={ProjectsData[projectShown].githublink}
+            target='_blank'
+            rel='noreferrer'>
+            <AiOutlineGithub />{t('repository')}
+          </a>
         </section>
       </section>
     </article>

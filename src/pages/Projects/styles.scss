@@ -12,14 +12,23 @@ article#projects {
     div.swiper {
       width: 90%;
       max-width: 40rem;
+      aspect-ratio: 16/9;
       border-radius: 1rem;
+      .swiper-slide-active {
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 100;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 30px 120px -30px inset,
+            rgba(0, 0, 0, 0.35) 0px 0px 100px -10px inset;
+        }
+      }
       img {
-        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-          rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-          rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
-          rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
-          rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
-          rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        height: auto;
       }
     }
     button {
@@ -32,12 +41,40 @@ article#projects {
       cursor: pointer;
       &.prev-btn {
         left: 10vw;
+        transition: filter 300ms ease-in-out;
+        &:hover svg {
+          animation: leftshadow 1s infinite;
+        }
+        @keyframes leftshadow {
+          0% {
+            filter: drop-shadow(0 0 0 #888888aa);
+          }
+          40% {
+            filter: drop-shadow(0 0 0 #888888aa);
+          }
+          100% {
+            filter: drop-shadow(-30px 0 0 transparent);
+          }
+        }
       }
       &.next-btn {
         right: 10vw;
+        &:hover svg {
+          animation: rightshadow 1s infinite;
+        }
+        @keyframes rightshadow {
+          0% {
+            filter: drop-shadow(0 0 0 #888888aa);
+          }
+          40% {
+            filter: drop-shadow(0 0 0 #888888aa);
+          }
+          100% {
+            filter: drop-shadow(30px 0 0 transparent);
+          }
+        }
       }
       @media (max-width: 1300px) {
-        font-size: 3rem;
         padding: 0.5rem;
         &.prev-btn {
           left: 0;
@@ -47,13 +84,23 @@ article#projects {
         }
       }
       @media (max-width: 1000px) {
-        font-size: 1.5rem;
-        padding: 0.25rem;
+        font-size: 3rem;
+        padding: 0.5rem;
         &.prev-btn {
-          left: -1rem;
+          left: -1.5rem;
         }
         &.next-btn {
-          right: -1rem;
+          right: -1.5rem;
+        }
+      }
+      @media (max-width: 900px) {
+        font-size: 2rem;
+        padding: 0.5rem;
+        &.prev-btn {
+          left: -2rem;
+        }
+        &.next-btn {
+          right: -2rem;
         }
       }
     }
@@ -77,8 +124,9 @@ article#projects {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 1rem;
+    gap: 0.5rem;
     section.labels {
+      margin-bottom: 0.5rem;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
@@ -91,10 +139,11 @@ article#projects {
         border-radius: 4px;
       }
     }
-    section.buttons {
+    section.links {
+      margin-top: 1rem;
       display: flex;
       gap: 0.5rem;
-      button {
+      a {
         display: flex;
         align-items: center;
         gap: 0.5rem;
@@ -104,6 +153,7 @@ article#projects {
         cursor: pointer;
         padding: 0.5rem 2rem;
         border: none;
+        text-decoration: none;
         transition-property: box-shadow, color;
         transition-duration: 500ms;
         box-shadow: inset 0 0 0 0 #000;
@@ -122,6 +172,41 @@ article#projects {
       }
     }
   }
+  @media (max-width: 900px) {
+    justify-content: unset;
+    gap: 0;
+    position: relative;
+    section.post {
+      width: 75%;
+      position: absolute;
+      top: 10%;
+    }
+    section.info {
+      position: absolute;
+      top: 55%;
+    }
+  }
+  @media (max-width: 700px) {
+    section.post {
+      top: 20%;
+    }
+  }
+  @media (max-width: 500px) {
+    section.post {
+      top: 25%;
+    }
+    section.info {
+      top: 50%;
+    }
+  }
+  @media (max-width: 300px) {
+    section.post {
+      top: 28.5%;
+    }
+    section.info {
+      top: 48.5%;
+    }
+  }
 }
 
 article#projects.light {
@@ -137,9 +222,16 @@ article#projects.light {
         border-color: #111;
       }
     }
-    section.buttons {
-      & > button {
+    section.links {
+      a {
+        background: #111;
+        color: #fff;
         border: 1px solid #000;
+        box-shadow: inset 0 0 0 0 #fff;
+        &:hover {
+          box-shadow: inset 0 -5rem 0 0 #fff;
+          color: #000;
+        }
       }
     }
   }
