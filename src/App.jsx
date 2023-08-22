@@ -4,6 +4,8 @@ import { Things, Cursor } from './components'
 import BR from './assets/lang/br.json'
 import US from './assets/lang/us.json'
 import { gsap } from 'gsap'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 
 export default function App() {
@@ -33,6 +35,18 @@ export default function App() {
         <Contact theme={theme} t={translation} />
       </main>
       <Cursor theme={theme} />
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable={false}
+        pauseOnHover={false}
+        theme="colored"
+      />
     </>
   )
 }
