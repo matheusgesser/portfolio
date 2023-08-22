@@ -5,7 +5,7 @@
   "contact": "Contato",
   "position": "Desenvolvedor Front-end",
   "copy": "Copiado!",
-  "aboutme": "Em busca da primeira oportunidade, motivado a trabalhar em projetos desafiadores e contribuir para o sucesso da equipe.",
+  "aboutme": "Espírito curioso e sempre em busca de aprendizado. Em busca da primeira oportunidade, motivado a trabalhar em projetos desafiadores e contribuir para o sucesso da equipe.",
   "resume": "Currículo",
   "pdf": "https://drive.google.com/u/0/uc?id=1FldhmTuagSnz_umI8YZRwX6O5WfqA0TM&export=download",
   "deploy": "Aplicação",
@@ -18,5 +18,8 @@
   "talk-ai": "Sala de chat com amigos e/ou ChatGPT",
   "git-combat": "Adivinhe, através de um duelo de repositórios, qual possui mais estrelas",
   "tech-tenzies": "Jogo onde você precisa fazer todos quadrados terem o mesmo valor",
-  "recicla-ideias": "Encontre idéias para reciclagem do próprio lixo"
+  "recicla-ideias": "Encontre idéias para reciclagem do próprio lixo",
+  "gesser-bank": "Landing page de um banco fictício desenvolvido de acordo com Figma",
+  "portfolio": "Esse portfolio",
+  "guess-nationality": "Adivinha a nacionalidade do nome inserido"
 }

@@ -3,8 +3,14 @@
   color: #fff;
 }
 
-* {
-  transition-property: color, background-color;
+a,
+p,
+h1,
+h2,
+strong,
+button,
+svg {
+  transition-property: color, background-color, border-color;
   transition-duration: 0.2s;
 }
 
