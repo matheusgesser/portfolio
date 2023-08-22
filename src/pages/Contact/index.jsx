@@ -2,13 +2,8 @@ import { useForm } from 'react-hook-form'
 import { sendMail } from '../../utils/sendMail'
 import './styles.scss'
 
-import './styles.scss'
-// import { useAnimations } from './useAnimations'
-
 export function Contact({ theme, t }) {
   const { register, handleSubmit, reset } = useForm()
-
-  // useAnimations()
 
   return (
     <article id='contact' className={theme}>

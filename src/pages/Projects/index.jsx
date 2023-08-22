@@ -1,6 +1,5 @@
 import { ProjectsData } from '../../assets/data/projects'
 import { useRef, useState } from 'react';
-// import { useAnimations } from './useAnimations'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import './styles.scss'

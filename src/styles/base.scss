@@ -9,7 +9,8 @@ h1,
 h2,
 strong,
 button,
-svg {
+svg,
+input {
   transition-property: color, background-color, border-color;
   transition-duration: 0.2s;
 }
