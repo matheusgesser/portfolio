@@ -24,7 +24,7 @@ export function Contact({ theme, t }) {
           <a href='https://linkedin.com/in/matheusgesser/' target='_blank' rel='noopener noreferrer'>LinkedIn</a>
         </li>
         <li>
-          <a href='https://linkedin.com/in/matheusgesser/' target='_blank' rel='noopener noreferrer'>GitHub</a>
+          <a href='https://github.com/matheusgesser/' target='_blank' rel='noopener noreferrer'>GitHub</a>
         </li>
         <li>
         <a href='mailto:matheusmvg@hotmail.com'>E-mail</a>
