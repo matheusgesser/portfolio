@@ -8,6 +8,15 @@
   "aboutme": "Looking for the first opportunity, ready to work on challenging projects and contribute to the team success.",
   "resume": "Curriculum",
   "pdf": "https://drive.google.com/u/0/uc?id=1Q1VeXZcBc32-Loah3CqbtSJbBv_1ux-g&export=download",
+  "deploy": "Deploy",
+  "repository": "Repository",
+  "name": "Name",
+  "email": "E-mail",
+  "message": "Message",
+  "submit": "Send",
+  "contactme": "Get in touch",
   "talk-ai": "Chatroom with your friends and/or ChatGPT",
+  "git-combat": "Guess, throught a repository battle, which one has more stars",
+  "tech-tenzies": "React minigame where you need to make all dices have same number",
   "recicla-ideias": "Find recycle ideas to do at home"
 }

@@ -32,6 +32,13 @@ article {
   }
 }
 
+button,
+a {
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
 * {
   scrollbar-width: thin;
   scrollbar-color: #222 #fff;

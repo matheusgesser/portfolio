@@ -8,7 +8,6 @@ import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import { gsap } from 'gsap'
 
-
 export function Home({ theme, t }) {
   useAnimations()
 

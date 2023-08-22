@@ -8,6 +8,15 @@
   "aboutme": "Em busca da primeira oportunidade, motivado a trabalhar em projetos desafiadores e contribuir para o sucesso da equipe.",
   "resume": "Currículo",
   "pdf": "https://drive.google.com/u/0/uc?id=1FldhmTuagSnz_umI8YZRwX6O5WfqA0TM&export=download",
+  "deploy": "Aplicação",
+  "repository": "Repositório",
+  "name": "Nome",
+  "email": "E-mail",
+  "message": "Mensagem",
+  "submit": "Enviar",
+  "contactme": "Entre em contato",
   "talk-ai": "Sala de chat com amigos e/ou ChatGPT",
+  "git-combat": "Adivinhe, através de um duelo de repositórios, qual possui mais estrelas",
+  "tech-tenzies": "Jogo onde você precisa fazer todos quadrados terem o mesmo valor",
   "recicla-ideias": "Encontre idéias para reciclagem do próprio lixo"
 }
