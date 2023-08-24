@@ -1,22 +1,9 @@
-*::selection {
-  background: #000;
-  color: #fff;
-}
-
-a,
-p,
-h1,
-h2,
-strong,
-button,
-svg,
-input {
-  transition-property: color, background-color, border-color;
-  transition-duration: 0.2s;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: #222;
+  background: #000;
   font-family: "Poppins", sans-serif;
 }
 
@@ -37,6 +24,14 @@ article {
   @media (max-width: 600px) {
     padding: 4rem;
   }
+  & *::selection {
+    background: #fff;
+    color: #111;
+  }
+  &.light *::selection {
+    background: #111;
+    color: #fff;
+  }
 }
 
 button,
@@ -44,6 +39,18 @@ a {
   &:active {
     transform: scale(0.95);
   }
+}
+
+a,
+p,
+h1,
+h2,
+strong,
+button,
+svg,
+input {
+  transition-property: color, background-color, border-color;
+  transition-duration: 0.2s;
 }
 
 * {

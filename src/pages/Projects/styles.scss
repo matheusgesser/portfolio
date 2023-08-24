@@ -13,7 +13,7 @@ article#projects {
       width: 90%;
       max-width: 40rem;
       aspect-ratio: 16/9;
-      border-radius: 0.8rem;
+      border-radius: 10px;
       .swiper-slide-active {
         position: relative;
         &::after {
@@ -106,16 +106,20 @@ article#projects {
     }
     img.laptop-overlay {
       position: absolute;
-      top: 0;
+      top: -3px;
       left: 50%;
       transform: translateX(-50%);
       width: 100%;
-      max-width: 54rem;
-      height: 103%;
+      max-width: 53.5rem;
+      height: 102%;
       pointer-events: none;
       z-index: 1;
+      filter: contrast(0.7);
       @media (max-width: 1050px) {
         width: 120%;
+      }
+      @media (max-width: 600px) {
+        top: 0;
       }
     }
   }
