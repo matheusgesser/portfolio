@@ -19,12 +19,18 @@ export function Things({ theme, handleToggleTheme, lang, toggleLang, t }) {
     })
     if (scrollY < 550) {
       navBar.querySelector('[href="#home"]').classList.add('active')
-    } else if (scrollY > 2100) {
+    } else if (scrollY > 2400) {
       navBar.querySelector('[href="#contact"]').classList.add('active')
-    } else if (scrollY > 1200) {
+    } else if (scrollY > 1500) {
       navBar.querySelector('[href="#projects"]').classList.add('active')
     } else if (scrollY > 550) {
       navBar.querySelector("[href='#about']").classList.add('active')
+    }
+    let socialsAside = document.querySelector('aside.socials')
+    if (navBar.querySelector('[href="#home"]').classList == '') {
+      socialsAside.classList.add('active')
+    } else {
+      socialsAside.classList.remove('active')
     }
   })
 

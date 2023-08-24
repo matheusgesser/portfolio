@@ -3,10 +3,10 @@ import JSLogo from '../../assets/home/js.png'
 import ReactLogo from '../../assets/home/react.png'
 import SassLogo from '../../assets/home/sass.png'
 import { useAnimations } from './useAnimations'
-import { RxCopy } from 'react-icons/rx'
-import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import { gsap } from 'gsap'
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import { GrMail } from 'react-icons/gr'
 
 export function Home({ theme, t }) {
   useAnimations()
@@ -22,22 +22,27 @@ export function Home({ theme, t }) {
     });
   }
 
-  function copyMail(event) {
-    navigator.clipboard.writeText('matheusmvg@hotmail.com')
-    setTimeout(() => {
-      event.target._tippy.hide()
-    }, 3000);
-  }
-
   return (
     <article id='home' className={theme} onMouseMove={moveElements}>
       <h1 data-speedx={30} data-speedy={0}>Matheus Gesser</h1>
       <h2 data-speedx={25} data-speedy={0}>{t('position')}</h2>
-      <Tippy trigger='click' placement='bottom' content={t('copy')} className={theme}>
-        <button data-speedx={30} data-speedy={0} onClick={copyMail}>
-          <RxCopy />matheusmvg@hotmail.com
-        </button>
-      </Tippy>
+      <ul className='socials'>
+        <li>
+          <a href='https://linkedin.com/in/matheusgesser/' target='_blank' rel='noopener noreferrer'>
+            <FaLinkedin />
+          </a>
+        </li>
+        <li>
+          <a href='https://github.com/matheusgesser/' target='_blank' rel='noopener noreferrer'>
+            <FaGithub />
+          </a>
+        </li>
+        <li>
+        <a href='mailto:matheusmvg@hotmail.com'>
+          <GrMail />
+        </a>
+        </li>
+      </ul>
       <img src={JSLogo} id='js' data-speedx={-30} data-speedy={-50} alt='JavaScript Logo' />
       <img src={ReactLogo} id='react' data-speedx={60} data-speedy={-40} alt='React Logo' />
       <img src={SassLogo} id='sass' data-speedx={-50} data-speedy={60} alt='Sass Logo' />

@@ -98,7 +98,8 @@ aside.top.light {
 aside.socials {
   z-index: 2;
   position: fixed;
-  bottom: 0;
+  bottom: -250px;
+  transition: bottom 800ms ease-in-out;
   padding-left: 1rem;
   padding-bottom: 0;
   display: flex;
@@ -120,6 +121,9 @@ aside.socials {
     background: #fff;
     transition: all 0.3s ease;
     margin-top: 0.5rem;
+  }
+  &.active {
+    bottom: 0;
   }
   &:hover {
     div.line {

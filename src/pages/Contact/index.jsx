@@ -1,9 +1,18 @@
 import { useForm } from 'react-hook-form'
 import { sendMail } from '../../utils/sendMail'
 import './styles.scss'
+import Tippy from '@tippyjs/react'
+import { RxCopy } from 'react-icons/rx'
 
 export function Contact({ theme, t }) {
   const { register, handleSubmit, reset } = useForm()
+
+  function copyMail(event) {
+    navigator.clipboard.writeText('matheusmvg@hotmail.com')
+    setTimeout(() => {
+      event.target._tippy.hide()
+    }, 3000);
+  }
 
   return (
     <article id='contact' className={theme}>
@@ -19,17 +28,12 @@ export function Contact({ theme, t }) {
         <textarea rows='10' placeholder={t('message')} {...register('message')} />
         <input type='submit' value={t('submit')} />
       </form>
-      <ul className='socials'>
-        <li>
-          <a href='https://linkedin.com/in/matheusgesser/' target='_blank' rel='noopener noreferrer'>LinkedIn</a>
-        </li>
-        <li>
-          <a href='https://github.com/matheusgesser/' target='_blank' rel='noopener noreferrer'>GitHub</a>
-        </li>
-        <li>
-        <a href='mailto:matheusmvg@hotmail.com'>E-mail</a>
-        </li>
-      </ul>
+      <span>{t('or')}</span>
+      <Tippy trigger='click' placement='bottom' content={t('copy')} className={theme}>
+        <button data-speedx={30} data-speedy={0} onClick={copyMail}>
+          <RxCopy />matheusmvg@hotmail.com
+        </button>
+      </Tippy>
     </article>
   )
 }
