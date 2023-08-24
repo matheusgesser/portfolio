@@ -68,13 +68,13 @@ article#contact {
     padding: 0.75rem 1.5rem;
     cursor: pointer;
     font-size: 0.9rem;
-    background: #fff;
-    color: #111;
-    border: none;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
     border-radius: 20rem;
     user-select: none;
     &:hover {
-      background: #eee;
+      background: #11111180;
     }
     svg {
       display: inline;
@@ -115,9 +115,17 @@ article#contact.light {
       }
     }
   }
+  span {
+    color: #000;
+  }
   button {
-    background: #111;
-    color: #fff;
-    border: none;
+    background: none;
+    border: 1px solid #000;
+    color: #000;
+    border-radius: 20rem;
+    user-select: none;
+    &:hover {
+      background: #00000020;
+    }
   }
 }
