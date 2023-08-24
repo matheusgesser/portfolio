@@ -33,6 +33,11 @@ export function useAnimations() {
         opacity: 0,
         duration: 0.5
       })
+      homeAnim.from(['#home > button'], {
+        y: 100,
+        opacity: 0,
+        duration: 0.5
+      })
     })
     return () => ctx.revert()
   }, [])

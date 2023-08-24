@@ -7,8 +7,11 @@ import { GrMail } from 'react-icons/gr'
 import { AiFillHome, AiFillQuestionCircle, AiFillCode, AiFillMessage } from 'react-icons/ai'
 import USFlag from '../../assets/flags/us.svg'
 import BRFlag from '../../assets/flags/br.svg'
+import { useAnimations } from './useAnimations';
 
 export function Things({ theme, handleToggleTheme, lang, toggleLang, t }) {
+  useAnimations()
+
   document.addEventListener('scroll', () => {
     let navBar = document.querySelector('aside.navigation')
     navBar.querySelectorAll('.active').forEach(el => {
