@@ -101,6 +101,9 @@ article#contact.light {
     input[type="submit"] {
       background: #000;
       color: #fff;
+      &:hover {
+        background: #222;
+      }
     }
   }
   ul.socials {

@@ -17,7 +17,7 @@ export function Home({ theme, t }) {
     elements.forEach(element => {
       let moveX = gsap.quickTo(element, 'x', {duration: 0.2, ease: 'power3'})
       let moveY = gsap.quickTo(element, 'y', {duration: 0.2, ease: 'power3'})
-      moveX(`${posX*element.dataset.speedx/window.innerWidth}`)
+      moveX(`${posX*element.dataset.speedx/window.innerWidth-12}`)
       moveY(`${posY*element.dataset.speedy/window.innerHeight}`)
     });
   }
@@ -31,8 +31,8 @@ export function Home({ theme, t }) {
 
   return (
     <article id='home' className={theme} onMouseMove={moveElements}>
-      <h1 data-speedx={20} data-speedy={0}>Matheus Gesser</h1>
-      <h2 data-speedx={15} data-speedy={0}>{t('position')}</h2>
+      <h1 data-speedx={30} data-speedy={0}>Matheus Gesser</h1>
+      <h2 data-speedx={25} data-speedy={0}>{t('position')}</h2>
       <Tippy trigger='click' placement='bottom' content={t('copy')} className={theme}>
         <button data-speedx={30} data-speedy={0} onClick={copyMail}>
           <RxCopy />matheusmvg@hotmail.com

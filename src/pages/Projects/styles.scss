@@ -129,6 +129,7 @@ article#projects {
     align-items: center;
     text-align: center;
     gap: 0.5rem;
+    padding: 0 1rem;
     section.labels {
       margin-bottom: 0.5rem;
       display: flex;
@@ -160,9 +161,9 @@ article#projects {
         text-decoration: none;
         transition-property: box-shadow, color;
         transition-duration: 500ms;
-        box-shadow: inset 0 0 0 0 #000;
+        box-shadow: inset 0 0 0 0 #444;
         &:hover {
-          box-shadow: inset 0 -5rem 0 0 #000;
+          box-shadow: inset 0 -5rem 0 0 #222;
           color: #fff;
         }
         & > svg {
