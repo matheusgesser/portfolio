@@ -13,6 +13,16 @@ export function useAnimations() {
           toggleActions: 'play none play none'
         },
       })
+      homeAnim.from(['#home > h1','#home > h2'], {
+        y: -100,
+        opacity: 0,
+        duration: 0.7
+      })
+      homeAnim.from(['#home > .socials'], {
+        y: 100,
+        opacity: 0,
+        duration: 0.5
+      })
       homeAnim.from('#react', {
         x: -200,
         opacity: 0,
@@ -27,16 +37,6 @@ export function useAnimations() {
         y: 100,
         opacity: 0,
         duration: 0.3
-      })
-      homeAnim.from(['#home > h1','#home > h2'], {
-        y: -100,
-        opacity: 0,
-        duration: 0.5
-      })
-      homeAnim.from(['#home > button'], {
-        y: 100,
-        opacity: 0,
-        duration: 0.5
       })
     })
     return () => ctx.revert()
