@@ -1,0 +1,20 @@
+section.loading-container {
+  position: fixed;
+  inset: 0;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  & svg:last-of-type {
+    width: 40rem;
+  }
+
+  transition: transform 500ms ease-in;
+  &.hide {
+    transform: scale(0);
+    pointer-events: none;
+  }
+}
