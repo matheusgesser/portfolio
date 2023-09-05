@@ -21,10 +21,10 @@ aside.top {
     }
     span.hover-reveal {
       letter-spacing: -12px;
-      clip-path: inset(-1rem 100% 0 0);
+      clip-path: inset(-5rem 20% 0 0);
       transition-property: clip-path, letter-spacing;
       transition-duration: 300ms;
-      transition-timing-function: ease-out;
+      transition-timing-function: linear;
     }
     &:hover {
       & span.hover-reveal {
@@ -55,7 +55,7 @@ aside.top {
         color: #000;
       }
     }
-    transition: rotate 10s ease-in;
+    transition: rotate 8s ease-out;
     &:hover {
       rotate: 2000deg;
     }
@@ -64,6 +64,10 @@ aside.top {
     img {
       height: 100%;
       width: 90%;
+    }
+    transition: transform 200ms ease-out;
+    &:hover {
+      transform: scale(0.9);
     }
   }
   @media (max-width: 1000px) {
@@ -161,10 +165,10 @@ aside.navigation {
     font-size: 1.6rem;
     padding: 0.5rem;
     color: #fff;
-    transition: all 150ms ease-in-out;
+    transition: all 150ms ease-out;
     opacity: 0.75;
     &:hover {
-      transform: scale(1.2);
+      transform: scale(1.15);
     }
     path {
       pointer-events: none;

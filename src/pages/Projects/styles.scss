@@ -114,7 +114,7 @@ article#projects {
       height: 102%;
       pointer-events: none;
       z-index: 1;
-      filter: contrast(0.7);
+      filter: contrast(0.88) brightness(1.5);
       @media (max-width: 1050px) {
         width: 120%;
       }

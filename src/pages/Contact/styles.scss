@@ -35,8 +35,10 @@ article#contact {
       font-size: 1.5rem;
       font-weight: bold;
       cursor: pointer;
+      opacity: 0.95;
+      transition: opacity 50ms;
       &:hover {
-        background: #eee;
+        opacity: 1;
       }
     }
     section.headers {
