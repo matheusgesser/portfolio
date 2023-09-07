@@ -20,16 +20,14 @@ aside.top {
       color: #fff;
     }
     span.hover-reveal {
-      letter-spacing: -12px;
-      clip-path: inset(-5rem 20% 0 0);
+      clip-path: inset(0rem 80% 0 0);
       transition-property: clip-path, letter-spacing;
-      transition-duration: 300ms;
+      transition-duration: 100ms;
       transition-timing-function: linear;
     }
     &:hover {
       & span.hover-reveal {
         clip-path: inset(0);
-        letter-spacing: -1px;
       }
     }
   }

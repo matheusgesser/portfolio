@@ -134,27 +134,3 @@ article#home {
     }
   }
 }
-
-div.tippy-box {
-  background: #fff;
-  color: #000;
-  div.tippy-arrow {
-    color: #fff;
-  }
-  &.light {
-    background: #000;
-    color: #fff;
-    div.tippy-arrow {
-      color: #000;
-    }
-  }
-}
-div.tippy-arrow {
-  color: #000;
-  &.light {
-    color: #fff;
-  }
-}
-div.tippy-content {
-  font-size: 1rem;
-}

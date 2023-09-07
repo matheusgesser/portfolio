@@ -72,3 +72,28 @@ input {
   border-radius: 20px;
   border: 1px solid #fff;
 }
+
+div.tippy-box {
+  background: #fff;
+  color: #000;
+  div.tippy-arrow {
+    color: #fff;
+  }
+  &.light {
+    background: #000;
+    color: #fff;
+    div.tippy-arrow {
+      color: #000;
+    }
+  }
+}
+div.tippy-arrow {
+  color: #000;
+  &.light {
+    color: #fff;
+  }
+}
+div.tippy-content {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 1rem;
+}
