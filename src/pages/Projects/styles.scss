@@ -158,12 +158,13 @@ article#projects {
         cursor: pointer;
         padding: 0.5rem 2rem;
         border: none;
+        border: 1px solid #fff;
         text-decoration: none;
         transition-property: box-shadow, color;
         transition-duration: 500ms;
-        box-shadow: inset 0 0 0 0 #444;
+        box-shadow: inset 0 0 0 0 #000;
         &:hover {
-          box-shadow: inset 0 -5rem 0 0 #222;
+          box-shadow: inset 0 -5rem 0 0 #000;
           color: #fff;
         }
         & > svg {
