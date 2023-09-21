@@ -1,11 +1,11 @@
 {
+  "lang": "us",
   "home": "Home",
   "about": "About",
   "projects": "Projects",
   "contact": "Contact",
   "position": "Front-end Developer",
   "copy": "Copied!",
-  "aboutme": "Curious spirit and always learning. Looking for the first opportunity, ready to work on challenging projects and contribute to the team success.",
   "resume": "Curriculum",
   "pdf": "https://drive.google.com/u/0/uc?id=1Q1VeXZcBc32-Loah3CqbtSJbBv_1ux-g&export=download",
   "deploy": "Deploy",
