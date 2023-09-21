@@ -51,6 +51,24 @@ article#home {
       }
     }
   }
+  div {
+    position: absolute;
+    bottom: 1rem;
+    & path {
+      stroke: #ccc;
+      transition: stroke 300ms;
+      &:hover {
+        stroke: #fff;
+      }
+    }
+    g:last-of-type > path {
+      fill: #ccc;
+      transition: stroke 300ms;
+      &:hover {
+        fill: #fff;
+      }
+    }
+  }
   img {
     position: absolute;
     width: 12rem;
@@ -105,6 +123,22 @@ article#home {
     }
     h2 {
       color: #000;
+    }
+    div {
+      & path {
+        stroke: #333;
+        transition: stroke 300ms;
+        &:hover {
+          stroke: #000;
+        }
+      }
+      g:last-of-type > path {
+        fill: #333;
+        transition: stroke 300ms;
+        &:hover {
+          fill: #000;
+        }
+      }
     }
     img {
       border: none;
