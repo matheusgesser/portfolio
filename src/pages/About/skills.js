@@ -15,12 +15,12 @@ export const skills = [
   },
   {
     label: "HTML5",
-    icon: "https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png",
     major: true,
   },
   {
     label: "CSS3",
-    icon: "https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png",
     major: true,
   },
   {
@@ -30,7 +30,7 @@ export const skills = [
   },
   {
     label: "Node.js",
-    icon: "https://user-images.githubusercontent.com/25181517/183568594-85e280a7-0d7e-4d1a-9028-c8c2209e073c.png",
+    icon: "https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png",
   },
   {
     label: "Express",
