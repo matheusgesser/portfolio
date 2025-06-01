@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+    --font-geist: 'Geist', sans-serif;
+    --font-raleway: 'Raleway', sans-serif;
+    --font-metrophobic: 'Metrophobic', sans-serif;
+
+    --primary: #009b3a;
+
+    --background: #fff;
+    --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #111;
+        --foreground: #eee;
+    }
+}
+
+body {
+    background: var(--background);
+    color: var(--foreground);
+
+    font-family: var(--font-metrophobic), sans-serif;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body::selection {
+    background: var(--primary);
+    color: #000;
+}
+
+a::selection,
+b::selection {
+    color: #FFF;
+    font-weight: normal;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.9);
+}
+
+a {
+    color: var(--primary);
+}
+
+b {
+    font-weight: normal;
+    color: #FFF;
+}
