@@ -6,7 +6,7 @@ import { LinkedInIcon } from "./icons/linkedin-icon";
 import { BrazilIcon } from "./icons/brazil-icon";
 
 export function Footer() {
-    const iconProps = { className: "text-[--primary] opacity-100 hover:opacity-80 transition-opacity" };
+    const iconProps = { className: "opacity-100 hover:opacity-80 transition-opacity" };
 
   return (
     <footer id="contact" className="bg-white text-zinc-800 py-18 pt-30">

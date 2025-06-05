@@ -2,7 +2,7 @@ import { Title } from "./title";
 
 export function About() {
   return (
-    <section className="mb-16 max-w-3xl">
+    <section className="mb-6 max-w-3xl">
         <Title>about me</Title>
 
         <p className="mb-4 text-justify">

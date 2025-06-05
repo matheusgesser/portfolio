@@ -1,5 +1,6 @@
 import { About } from "@/components/about"
 import { Hero } from "@/components/hero"
+import { Journey } from "@/components/journey"
 
 export default function Portfolio() {
   return (
@@ -7,6 +8,8 @@ export default function Portfolio() {
       <Hero />
 
       <About />
+
+      <Journey />
     </div>
   )
 }
