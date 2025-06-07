@@ -22,7 +22,7 @@ export function Projects() {
                         {project.title}
                     </h3>
 
-                    <span className="text-zinc-600 group-hover:text-zinc-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all">
+                    <span className="hidden sm:block text-zinc-600 group-hover:text-zinc-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all">
                         <ArrowTopRightIcon />
                     </span>
                 </div>
