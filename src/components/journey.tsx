@@ -35,7 +35,7 @@ export function Journey() {
             <div className="flex flex-row items-stretch">
                 <div className="ml-12 relative flex-shrink-0 w-[1px] bg-zinc-700 py-4">
                     <div className="absolute bottom-[-3px] -right-[1px] w-1 h-1 bg-zinc-700 rounded-full">
-                        <span className="absolute right-1.5 -top-[8px] text-deep-purple-400 font-medium text-sm mr-2 w-8 text-right">
+                        <span className="absolute right-1.5 -top-[8px] text-deep-purple-400 font-medium text-sm mr-2 w-8 text-right" aria-hidden>
                             2022
                         </span>
                     </div>
@@ -50,7 +50,7 @@ export function Journey() {
                         return (
                             <div className="relative" key={index}>
                                 <div className="absolute left-[-44.5px] top-6 flex items-center">
-                                    <span className="text-deep-purple-400 font-medium text-sm mr-2 w-8 text-right">
+                                    <span className="text-deep-purple-400 font-medium text-sm mr-2 w-8 text-right" aria-hidden>
                                         {startDate.year}
                                     </span>
 
