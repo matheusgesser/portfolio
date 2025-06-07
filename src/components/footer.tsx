@@ -23,6 +23,9 @@ export function Footer() {
                     <li>
                         <Link
                             href="https://github.com/matheusgesser"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Visit matheusgesser's GitHub profile (opens in a new tab)"
                             className="text-white hover:text-deep-purple-400 transition-colors"
                         >
                             <GithubIcon {...iconProps} />
@@ -32,6 +35,9 @@ export function Footer() {
                     <li>
                         <Link
                             href="https://linkedin.com/in/matheusgesser"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Visit matheusgesser's LinkedIn profile (opens in a new tab)"
                             className="text-white hover:text-deep-purple-400 transition-colors"
                         >
                             <LinkedInIcon {...iconProps} />
