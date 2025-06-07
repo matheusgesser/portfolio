@@ -6,6 +6,7 @@
     --font-metrophobic: 'Metrophobic', sans-serif;
 
     --primary: #009b3a;
+    --primary-lighter: color-mix(in srgb, var(--primary) 90%, white);
 
     --background: #fff;
     --foreground: #171717;
@@ -42,6 +43,10 @@ b::selection {
 
 a {
     color: var(--primary);
+}
+
+a:hover {
+    color: var(--primary-lighter);
 }
 
 b {

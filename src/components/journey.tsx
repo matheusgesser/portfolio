@@ -27,13 +27,13 @@ const formatExperienceInterval = (
 
 export function Journey() {
     return (
-        <section className="mb-16">
+        <section id="journey" className="mb-2">
             <Title>
                 my journey
             </Title>
 
-            <div className="flex flex-row items-stretch py-8">
-                <div className="ml-12 relative flex-shrink-0 w-[1px] bg-zinc-700 py-4 translate-y-8">
+            <div className="flex flex-row items-stretch">
+                <div className="ml-12 relative flex-shrink-0 w-[1px] bg-zinc-700 py-4">
                     <div className="absolute bottom-[-3px] -right-[1px] w-1 h-1 bg-zinc-700 rounded-full">
                         <span className="absolute right-1.5 -top-[8px] text-deep-purple-400 font-medium text-sm mr-2 w-8 text-right">
                             2022
@@ -41,7 +41,7 @@ export function Journey() {
                     </div>
                 </div>
 
-                <div className="flex-grow space-y-12">
+                <div className="flex-grow space-y-12 my-4">
                     {JOURNEY_DATA.toReversed().map((experience, index) => {
                         const { startDate, endDate } = parseExperienceDate(experience.date);
 
@@ -57,7 +57,7 @@ export function Journey() {
                                     <div className={`${bulletBackground} w-2 h-2 rounded-full flex items-center justify-center overflow-hidden`} />
                                 </div>
 
-                                <div className="flex flex-col gap-2 bg-zinc-800/30 p-6 rounded-xl shadow-sm shadow-deep-purple-500/5 ml-6">
+                                <div className="flex flex-col gap-2 bg-zinc-800/30 px-6 py-4 rounded-xl shadow-sm shadow-deep-purple-500/5 ml-6">
                                     <h3 className="text-xl font-semibold text-zinc-300">
                                         {experience.role}
                                     </h3>

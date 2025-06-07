@@ -1,9 +1,7 @@
 import Link from "next/link";
 import { Title } from "./title";
 import { Hero } from "./hero";
-import { GithubIcon } from "./icons/github-icon";
-import { LinkedInIcon } from "./icons/linkedin-icon";
-import { BrazilIcon } from "./icons/brazil-icon";
+import { GithubIcon, LinkedInIcon, BrazilIcon } from "./icons";
 
 export function Footer() {
     const iconProps = { className: "opacity-100 hover:opacity-80 transition-opacity" };
@@ -17,7 +15,7 @@ export function Footer() {
                     get in touch
                 </Title>
 
-                <span>
+                <span className="select-all">
                     matheusmvg@hotmail.com
                 </span>
 

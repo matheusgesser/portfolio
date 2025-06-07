@@ -16,7 +16,7 @@ export function Title({ theme = 'dark', dot = true, className, children }: Props
 
     return (
         <h2 className={`${color} text-2xl md:text-3xl font-bold mb-6 tracking-tight font-(family-name:--font-raleway) ${className}`}>
-            {title}{dot && <span className="text-4xl text-[#009b3a] leading-[45px] font-(family-name:--font-metrophobic)">.</span>}
+            {title}{dot && <span className="select-none text-4xl text-[#009b3a] leading-[45px] font-(family-name:--font-metrophobic)" aria-hidden>.</span>}
         </h2>
     )
 }

@@ -21,7 +21,7 @@ export function Hero({ theme = 'dark', textAlign = 'start', hideAvatar = false, 
         <div className={`flex flex-col items-center sm:items-${textAlign}`}>
             {!hideAvatar && <Avatar />}
 
-            <h1 className={`${nameTextSize} ${color} font-bold tracking-tighter font-(family-name:--font-geist)`}>
+            <h1 className={`${nameTextSize} ${color} text-center font-bold tracking-tighter font-(family-name:--font-geist)`}>
                 matheus gesser
             </h1>
 
