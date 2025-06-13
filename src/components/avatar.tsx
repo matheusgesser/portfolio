@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export function Avatar() {
     return (
-        <div className='p-[4px] rounded-full bg-gradient-to-tr from-[#009b3a] to-green-500'>
+        <div className='p-[4px] rounded-full bg-gradient-to-tr from-(--primary) to-(--primary-lighter)'>
             <div className='p-1 bg-black rounded-full'>
                 <Image
                     src="/avatar.png"
