@@ -2,6 +2,7 @@ import { JOURNEY_DATA } from "@/data/journey.data"
 import { decomposeDate, getShortMonth } from "@/lib/date.helper";
 import type { Journey } from "@/types/journey.type";
 import { Title } from "./title";
+import { Descriptions } from "./descriptions";
 
 const parseExperienceDate = (date: Journey.Model['date']) => {
     const startDate = decomposeDate(date.start);
@@ -74,11 +75,9 @@ export function Journey() {
                                         </span>
                                     </p>
 
-                                    {experience.descriptions?.map((description, index) => (
-                                        <p className="text-sm lg:text-justify" key={index}>
-                                           {description}
-                                        </p>
-                                    ))}
+                                    {experience.descriptions
+                                        ? <Descriptions descriptions={experience.descriptions} />
+                                        : null}
                                 </div>
                             </div>
                         )
