@@ -5,7 +5,7 @@
     --font-raleway: 'Raleway', sans-serif;
     --font-metrophobic: 'Metrophobic', sans-serif;
 
-    --primary: theme('colors.teal.500');
+    --primary: theme('colors.cyan.400');
     --primary-lighter: color-mix(in srgb, var(--primary) 90%, white);
 
     --background: #fff;

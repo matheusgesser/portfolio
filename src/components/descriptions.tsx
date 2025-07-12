@@ -18,8 +18,8 @@ export function Descriptions({ descriptions }: Props) {
         const isLastInitiallyShown = !expanded && (index === lastInitialIndex);
 
         return (
-            <Fragment>
-                <p className="text-sm lg:text-justify" key={index}>
+            <Fragment key={index}>
+                <p className="text-sm lg:text-justify">
                     {description}
                 </p>
 
