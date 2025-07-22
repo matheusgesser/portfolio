@@ -50,7 +50,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
     return (
         <html lang="en">
             <body className={`${geist.className} ${raleway.className} ${metrophobic.className} antialiased min-h-screen flex flex-col`}>
-                <main className="grid grid-cols-[1fr_min(var(--max-article-width),calc(100%-var(--viewport-padding)*2))_1fr] gap-x-(--viewport-padding) py-18 px-2 lg:pt-40 w-full bg-gradient-to-b from-zinc-950 via-black to-black text-zinc-400">
+                <main className="grid grid-cols-[1fr_min(42rem, 100%)_1fr] py-18 px-4 lg:pt-40 w-full bg-gradient-to-b from-zinc-950 via-black to-black text-zinc-400">
                     <div className="col-start-2 w-full max-w-(--max-article-width)">
                         {children}
                     </div>

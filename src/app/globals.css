@@ -11,8 +11,6 @@
     --background: #fff;
     --foreground: #171717;
 
-    --viewport-padding: 16px;
-    --max-article-width: calc(100vw - var(--viewport-padding) * 2);
 }
 
 @media (prefers-color-scheme: dark) {
