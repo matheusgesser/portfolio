@@ -10,12 +10,22 @@
 
     --background: #fff;
     --foreground: #171717;
+
+    --viewport-padding: 16px;
+    --max-article-width: calc(100vw - var(--viewport-padding) * 2);
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --background: #111;
         --foreground: #eee;
+    }
+}
+
+@media (min-width: 900px) {
+    :root {
+        --viewport-padding: 32px;
+        --max-article-width: 48rem;
     }
 }
 
