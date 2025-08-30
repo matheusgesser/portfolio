@@ -1,6 +1,7 @@
 'use client'
 
 import { Fragment, useState } from "react";
+import { ChevronDownIcon } from "./icons/chevron-down-icon";
 
 type Props = { descriptions: string[] };
 
@@ -23,7 +24,11 @@ export function Descriptions({ descriptions }: Props) {
                     {description}
                 </p>
 
-                {isLastInitiallyShown && <button type="button" className="self-start cursor-pointer text-xs text-(--primary)" onClick={() => setExpanded(true)}>View more</button>}
+                {isLastInitiallyShown && <button type="button" className="flex items-center gap-0.5 self-start cursor-pointer text-xs text-(--primary)" onClick={() => setExpanded(true)}>
+                    <ChevronDownIcon width={20} height={20} />
+                    
+                    Show more
+                </button>}
             </Fragment>
         )
     })
