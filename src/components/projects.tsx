@@ -18,9 +18,9 @@ export function Projects() {
               className="group flex flex-col gap-2 bg-zinc-800/30 hover:bg-zinc-800/50 px-6 py-4 rounded-xl transition-all duration-200 cursor-pointer"
             >
                 <div className="flex items-center justify-between">
-                    <h3 className="text-xl font-semibold text-zinc-300 group-hover:text-white transition-colors pr-8">
+                    <h4 className="text-xl font-semibold text-zinc-300 group-hover:text-white transition-colors pr-8">
                         {project.title}
-                    </h3>
+                    </h4>
 
                     <span className="hidden sm:block text-zinc-600 group-hover:text-zinc-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all">
                         <ArrowTopRightIcon />

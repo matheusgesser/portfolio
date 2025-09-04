@@ -59,9 +59,9 @@ export function Journey() {
                                 </div>
 
                                 <div className="flex flex-col gap-2 bg-zinc-800/30 px-6 py-4 rounded-xl shadow-sm shadow-deep-purple-500/5 ml-6">
-                                    <h3 className="text-xl font-semibold text-zinc-300">
+                                    <h4 className="text-xl font-semibold text-zinc-300">
                                         {experience.role}
-                                    </h3>
+                                    </h4>
 
                                     <p className="flex flex-col md:flex-row md:gap-2">
                                         <a href={experience.company.url} target="_blank" rel="noopener noreferrer">
