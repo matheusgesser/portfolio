@@ -27,7 +27,7 @@ export function Projects() {
                     </span>
                 </div>
 
-                <p className="text-sm sm:text-justify text-zinc-400 group-hover:text-zinc-300 transition-colors">
+                <p className="text-sm text-zinc-400 group-hover:text-zinc-300 transition-colors">
                     {project.description}
                 </p>
 

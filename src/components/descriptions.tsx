@@ -20,7 +20,7 @@ export function Descriptions({ descriptions }: Props) {
 
         return (
             <Fragment key={index}>
-                <p className="text-sm lg:text-justify">
+                <p className="text-sm">
                     {description}
                 </p>
 

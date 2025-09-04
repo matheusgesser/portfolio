@@ -6,7 +6,7 @@ export function Avatar() {
             <div className='p-[4px] bg-black rounded-full'>
                 <Image
                     src="/avatar.png"
-                    alt="A digital anime-style illustration of a young man with short, dark, styled hair and a fade haircut. He wears a black T-shirt and a thin silver chain necklace. His expression is neutral, and he faces forward against a solid beige background."
+                    alt="Portrait of Matheus Gesser wearing a black jacket"
                     width={140}
                     height={140}
                     quality={100}

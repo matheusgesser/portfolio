@@ -25,9 +25,9 @@ export function Hero({ theme = 'dark', textAlign = 'start', hideAvatar = false, 
                 matheus gesser
             </h1>
 
-            <p className={`${roleTextSize} text-zinc-500 tracking-tight font-(family-name:--font-raleway)`}>
+            <h2 className={`${roleTextSize} text-zinc-500 tracking-tight font-(family-name:--font-raleway)`}>
                 Frontend Developer
-            </p>
+            </h2>
         </div>
     )
 }
