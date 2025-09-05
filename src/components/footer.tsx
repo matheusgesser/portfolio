@@ -3,6 +3,7 @@ import { Title } from "./title";
 import { Hero } from "./hero";
 import { BrazilIcon } from "./icons";
 import { SOCIAL_DATA } from "@/data/social.data";
+import { RealtimeWeather } from "./realtime-weather";
 
 export function Footer() {
     const iconProps = { className: "text-black opacity-100 hover:opacity-80 transition-opacity" };
@@ -41,11 +42,13 @@ export function Footer() {
 
                     <div className="flex items-center gap-1">
                         <span className="mt-auto">
-                            Santa Catarina, Brazil
+                            Blumenau, Brazil
                         </span>
 
                         <BrazilIcon />
                     </div>
+
+                    <RealtimeWeather />
 
                     <span className="text-deep-purple-400">
                         © {new Date().getFullYear()}
