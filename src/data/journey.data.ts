@@ -10,7 +10,7 @@ export const JOURNEY_DATA: Journey.Model[] = [
             label: "Contato Seguro",
             url: "https://canaldaetica.com.br/sobre-nos/",
         },
-        role: "Junior Frontend Developer",
+        role: "Junior Front-end Developer",
         descriptions: [
             "Significant contribution to the creation and maintenance of the components of the company's own design system, with clean, adaptable, and reusable code. Focus on improving usability and user experience. Internal documentation with Storybook.",
             "Participation in architecture and design debates and decisions, ensuring the adoption of modern industry technologies and trends to develop scalable, adaptable, and future-proof solutions.",
