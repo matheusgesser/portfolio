@@ -44,7 +44,9 @@ const formatWeather = (data: WeatherData | null) => {
 
     const description = WEATHER_CODES[data.weathercode] || "We’re cooked 🔥";
 
-    return `${description} ${data.temperature}°`;
+    const temperature = `${Math.round(data.temperature)}°C`;
+
+    return `${description} ${temperature}`;
 };
 
 export function RealtimeWeather() {
