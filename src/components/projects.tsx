@@ -15,6 +15,8 @@ export function Projects() {
             <Link
               key={index}
               href={project.url}
+              target="_blank"
+              aria-label={`Visit ${project.title} (opens in a new tab)`}
               className="group flex flex-col gap-2 bg-zinc-800/30 hover:bg-zinc-800/50 px-6 py-4 rounded-xl transition-all duration-200 cursor-pointer"
             >
                 <div className="flex items-center justify-between">
